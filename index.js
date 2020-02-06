@@ -144,26 +144,26 @@ app.get('/template', template.get);
 
 var upload = require('./upload.js');
 app.post('/resultp', upload.post);
-/*
+
 app.get('/programs', function (req, res) {
     let data={"k1":"kasi","k2":"kkd"};
  res.render("programs.hbs", { layout:"header_sms.hbs",data });
-//console.log("para", req.params);
+console.log("para", req.params);
     
-    // res.render("admin.hbs");
-    //res.write('keshav')
-    //res.end()
+    res.render("admin.hbs");
+    res.write('keshav')
+    res.end()
 
 })
 
 app.get('/about-course', function (req, res) {
     
  res.render("about_course.hbs", { layout:"header_sms.hbs" });
-//console.log("para", req.params);
+console.log("para", req.params);
     
-    // res.render("admin.hbs");
-    //res.write('keshav')
-    //res.end()
+    res.render("admin.hbs");
+    res.write('keshav')
+    res.end()
 
 })
 app.get('/course-structure', function (req, res) {
@@ -244,9 +244,9 @@ app.get('/login/:a/:b', function (req, res) {
  res.render("login.hbs", { layout:"header.hbs" },{ v1: req.params.a,v2: req.params.b });
 console.log("para", req.params);
     
-    // res.render("admin.hbs");
-    //res.write('keshav')
-    //res.end()
+     res.render("admin.hbs");
+    res.write('keshav')
+    res.end()
 
 })
 
@@ -272,5 +272,5 @@ app.get('/admin/:k1/:k2', function (req, res) {
 
 })
 
-*/
+
 app.listen(3000)
