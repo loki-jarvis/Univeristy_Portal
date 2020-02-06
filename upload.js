@@ -24,7 +24,7 @@ exports.post = function (req, res) {
 			if (err) throw err;
 			//res.send(JSON.Stringify(authors));
 			// res.render(__dirname + '/index.html',{authors});
-			res.send(authors)
+			//res.send(authors)
 			//res.send(authors.length + ' authors have been successfully uploaded.');
 			// res.render("resultpo.hbs",{layout:"header_mod.hbs"});
 		 });
