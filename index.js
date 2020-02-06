@@ -145,132 +145,132 @@ app.get('/template', template.get);
 var upload = require('./upload.js');
 app.post('/resultp', upload.post);
 
-app.get('/programs', function (req, res) {
-    let data={"k1":"kasi","k2":"kkd"};
- res.render("programs.hbs", { layout:"header_sms.hbs",data });
-console.log("para", req.params);
+// app.get('/programs', function (req, res) {
+//     let data={"k1":"kasi","k2":"kkd"};
+//  res.render("programs.hbs", { layout:"header_sms.hbs",data });
+// console.log("para", req.params);
     
-    res.render("admin.hbs");
-    res.write('keshav')
-    res.end()
+//     res.render("admin.hbs");
+//     res.write('keshav')
+//     res.end()
 
-})
+// })
 
-app.get('/about-course', function (req, res) {
+// app.get('/about-course', function (req, res) {
     
- res.render("about_course.hbs", { layout:"header_sms.hbs" });
-console.log("para", req.params);
+//  res.render("about_course.hbs", { layout:"header_sms.hbs" });
+// console.log("para", req.params);
     
-    res.render("admin.hbs");
-    res.write('keshav')
-    res.end()
+//     res.render("admin.hbs");
+//     res.write('keshav')
+//     res.end()
 
-})
-app.get('/course-structure', function (req, res) {
+// })
+// app.get('/course-structure', function (req, res) {
     
- res.render("course_structure.hbs", { layout:"header_sms.hbs" });
+//  res.render("course_structure.hbs", { layout:"header_sms.hbs" });
 
-})
+// })
 
-app.get('/downloads', function(req, res){
-  const file = './downloads/Course-Structure-2016-2017.docx';
-  res.download(file); // Set disposition and send it.
-});
+// app.get('/downloads', function(req, res){
+//   const file = './downloads/Course-Structure-2016-2017.docx';
+//   res.download(file); // Set disposition and send it.
+// });
 
 
-app.get('/eligibility', function (req, res) {
+// app.get('/eligibility', function (req, res) {
     
- res.render("eligibility.hbs", { layout:"header_sms.hbs" });
+//  res.render("eligibility.hbs", { layout:"header_sms.hbs" });
 
-})
-app.get('/syllabus', function (req, res) {
+// })
+// app.get('/syllabus', function (req, res) {
     
- res.render("syllabus.hbs", { layout:"header_sms.hbs" });
+//  res.render("syllabus.hbs", { layout:"header_sms.hbs" });
 
-})
-app.get('/infra-structure', function (req, res) {
+// })
+// app.get('/infra-structure', function (req, res) {
     
- res.render("infrastructure.hbs", { layout:"header_sms.hbs" });
+//  res.render("infrastructure.hbs", { layout:"header_sms.hbs" });
 
-})
-app.get('/faculty', function (req, res) {
+// })
+// app.get('/faculty', function (req, res) {
     
- res.render("faculty_details.hbs", { layout:"header_sms.hbs" });
+//  res.render("faculty_details.hbs", { layout:"header_sms.hbs" });
 
-})
-app.get('/bos', function (req, res) {
+// })
+// app.get('/bos', function (req, res) {
     
- res.render("bos.hbs", { layout:"header_sms.hbs" });
+//  res.render("bos.hbs", { layout:"header_sms.hbs" });
 
-})
-app.get('/reasearch-publications', function (req, res) {
+// })
+// app.get('/reasearch-publications', function (req, res) {
     
- res.render("r_p.hbs", { layout:"header_sms.hbs" });
+//  res.render("r_p.hbs", { layout:"header_sms.hbs" });
 
-})
+// })
 
-app.get('/forthcoming-events', function (req, res) {
+// app.get('/forthcoming-events', function (req, res) {
     
- res.render("Forthcomin_ Events.hbs", { layout:"header_sms.hbs" });
+//  res.render("Forthcomin_ Events.hbs", { layout:"header_sms.hbs" });
 
-})
-app.get('/past-events', function (req, res) {
+// })
+// app.get('/past-events', function (req, res) {
     
- res.render("past.hbs", { layout:"header_sms.hbs" });
+//  res.render("past.hbs", { layout:"header_sms.hbs" });
 
-})
-app.get('/placements', function (req, res) {
+// })
+// app.get('/placements', function (req, res) {
     
- res.render("placements.hbs", { layout:"header_sms.hbs" });
+//  res.render("placements.hbs", { layout:"header_sms.hbs" });
 
-})
-app.get('/achivements', function (req, res) {
+// })
+// app.get('/achivements', function (req, res) {
     
- res.render("ache.hbs", { layout:"header_sms.hbs" });
+//  res.render("ache.hbs", { layout:"header_sms.hbs" });
 
-})
-app.get('/alumni', function (req, res) {
+// })
+// app.get('/alumni', function (req, res) {
     
- res.render("alumi.hbs", { layout:"header_sms.hbs" });
+//  res.render("alumi.hbs", { layout:"header_sms.hbs" });
 
-})
-app.get('/contact-us', function (req, res) {
+// })
+// app.get('/contact-us', function (req, res) {
     
- res.render("cont.hbs", { layout:"header_sms.hbs" });
+//  res.render("cont.hbs", { layout:"header_sms.hbs" });
 
-})
-app.get('/login/:a/:b', function (req, res) {
+// })
+// app.get('/login/:a/:b', function (req, res) {
     
- res.render("login.hbs", { layout:"header.hbs" },{ v1: req.params.a,v2: req.params.b });
-console.log("para", req.params);
+//  res.render("login.hbs", { layout:"header.hbs" },{ v1: req.params.a,v2: req.params.b });
+// console.log("para", req.params);
     
-     res.render("admin.hbs");
-    res.write('keshav')
-    res.end()
+//      res.render("admin.hbs");
+//     res.write('keshav')
+//     res.end()
 
-})
+// })
 
 
-app.get('/nm/:k1/:k2', function (req, res) {
-    console.log("para", req.params,req.params.k1);
-    //  let data = 
-    // res.render("get_values.hbs", { data : JSON.stringify(req.params)});
-    res.render("get_values.hbs", { v1: req.params.k1,v2: req.params.k2 });
+// app.get('/nm/:k1/:k2', function (req, res) {
+//     console.log("para", req.params,req.params.k1);
+//     //  let data = 
+//     // res.render("get_values.hbs", { data : JSON.stringify(req.params)});
+//     res.render("get_values.hbs", { v1: req.params.k1,v2: req.params.k2 });
 
     
-    // res.render("admin.hbs");
-    //res.write('keshav')
-    //res.end()
+//     // res.render("admin.hbs");
+//     //res.write('keshav')
+//     //res.end()
 
-})
-app.get('/j2',function(req,res){
-    res.render("kview1.hbs",{layout : "klayout2.hbs"});
-})
-app.get('/admin/:k1/:k2', function (req, res) {
-    console.log("para", req.params);
-    res.render("admin.hbs");
+// })
+// app.get('/j2',function(req,res){
+//     res.render("kview1.hbs",{layout : "klayout2.hbs"});
+// })
+// app.get('/admin/:k1/:k2', function (req, res) {
+//     console.log("para", req.params);
+//     res.render("admin.hbs");
 
-})
+// })
 
 
 app.listen(3000)
